@@ -1,74 +1,162 @@
-/* Common styles for body, main, footer, and nav */
-body, .container {
+body {
+    margin:auto
     display: flex;
-    flex-direction: column; /* Adjust for vertical alignment */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #B0E0E6; /* Lighter blue background */
-    font-family: 'Nunito', sans-serif; /* Nunito font */
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue; /* Added background color */
 }
 
-.main, .footer {
+.top-nav, .footer {
+    background-color: #FF4500;
     text-align: center;
-    width: 100%;
+    max-width: 100%;
+    height: 5vh;
+    max-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .top-nav a {
+        color: white; /* Set the desired color value */
+    }
+        color: white;
+        text-decoration: underline;
+        text-decoration-color: white;
+        text-decoration-thickness: 2px;
+        .footer {
+            color: white; /* Set the desired color value */
+            font-size: 5vh; /* Set the desired font size value */
+            text-align: center; /* Set the desired text alignment */
+        .footer {
+            text-decoration: none;
+        }
+            font-weight: bold;
+        }
+    }
+
+    .top-nav a:hover {
+        color: yellow;
+    }
+/*    padding: 5px 0;*/
+
+}
+
+
+/*underline color white*/
+
+.top-nav ul {
+    text-decoration: underline;
+
+
+
+}
+
+.top-nav ul,.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Added */
+    justify-content: center; /* Added */
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /*overflow: auto;*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.welcome {
+    color: black;
+    font-size: 5vh;
+    text-align: center; /* Added */
+    font-weight: bold;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 30vh;
+    margin-bottom: 20px;
+    animation: spin 4s linear infinite;
+}
+
+.main {
+    text-align: center;
+}
+body {
+    overflow: hidden;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: auto;
+    flex: 1;
+    /*overflow: auto;*/
+    justify-content: center;
+    align-items: center;        
+    height: 100vh;
+}  
+
+.button {
+    background-color: #FF4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.button:hover {
+    background-color: #FF6347;
 }
 
 .footer {
     position: absolute;
     bottom: 0;
-    background-color: #FF6347; /* Darker orange footer background */
-    width: 100%;
-    padding: 10px 0;
-}
-
-/* Additional styles */
-.top-nav {
-    background-color: #FF6347; /* Darker orange top line */
     width: 100%;
     text-align: center;
-    padding: 10px 0;
-}
-
-.nav ul, .nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-.nav ul li, .nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-.logo {
-    max-width: 100%; /* Limit the maximum width of the image */
-    max-height: 30vh; /* Limit the maximum height of the image to 30% of the viewport height */
-    margin-bottom: 20px; /* Add margin below the image */
-    animation: spin 4s linear infinite; /* Apply the spin animation */
+    /* padding: 10px 0;*/
+    background-color: #FF4500;
 }
 
 @keyframes spin {
     from {
-        transform: rotate(0deg); /* Start the rotation from 0 degrees */
+        transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg); /* Rotate the logo to 360 degrees */
+        transform: rotate(360deg);
     }
-}
-
-.button {
-    background-color: #FF4500; /* Darker orange button background color */
-    color: #fff; /* White text color */
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.button:hover {
-    background-color: #FF6347; /* Lighter orange on hover */
 }
