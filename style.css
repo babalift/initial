@@ -1,0 +1,75 @@
+/* Common styles for body, main, footer, and nav */
+body, .container {
+    display: flex;
+    flex-direction: column; /* Adjust for vertical alignment */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #B0E0E6; /* Lighter blue background */
+    font-family: 'Nunito', sans-serif; /* Nunito font */
+}
+
+main, .main {
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #FF6347; /* Darker orange footer background */
+}
+
+.nav ul, .nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li, .nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Additional styles */
+.slogan {
+    color: #A52A2A; /* Adjusted red text color */
+    font-size: 24px;
+    margin-bottom: 20px; /* Add margin below the slogan */
+}
+
+.logo {
+    max-width: 100%; /* Limit the maximum width of the image */
+    max-height: 30vh; /* Limit the maximum height of the image to 30% of the viewport height */
+    margin-bottom: 20px; /* Add margin below the image */
+    animation: spin 4s linear infinite; /* Apply the spin animation */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg); /* Start the rotation from 0 degrees */
+    }
+    to {
+        transform: rotate(360deg); /* Rotate the logo to 360 degrees */
+    }
+}
+
+
+
+
+
+.button {
+    background-color: #FF4500; /* Darker orange button background color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #FF6347; /* Lighter orange on hover */
+}
