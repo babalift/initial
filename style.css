@@ -11,15 +11,25 @@ body, .container {
     font-family: 'Nunito', sans-serif; /* Nunito font */
 }
 
-main, .main {
+.main, .footer {
     text-align: center;
+    width: 100%;
 }
 
 .footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #FF6347; /* Darker orange footer background */
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Additional styles */
+.top-nav {
+    background-color: #FF6347; /* Darker orange top line */
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    background-color: #FF6347; /* Darker orange footer background */
 }
 
 .nav ul, .nav ul {
@@ -30,13 +40,6 @@ main, .main {
 .nav ul li, .nav ul li {
     display: inline;
     margin-right: 10px;
-}
-
-/* Additional styles */
-.slogan {
-    color: #A52A2A; /* Adjusted red text color */
-    font-size: 24px;
-    margin-bottom: 20px; /* Add margin below the slogan */
 }
 
 .logo {
@@ -54,10 +57,6 @@ main, .main {
         transform: rotate(360deg); /* Rotate the logo to 360 degrees */
     }
 }
-
-
-
-
 
 .button {
     background-color: #FF4500; /* Darker orange button background color */
