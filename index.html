@@ -26,15 +26,11 @@
     <div id="central" class="container" style="display: flex;">
         <h1 class="welcome">Welcome to...</h1> <!-- Welcome above the image -->
         <img src="https://raw.githubusercontent.com/babalift/initial/main/icon.png" alt="BaBaLift Logo" class="logo"> <!-- Image/Logo with modified size -->
-        <button class="button" onclick="openModal()">Get a Lift</button> <!-- Adjusted button text -->
+        <button class="button" onclick="showInput()">Get a Lift</button> <!-- Adjusted button text -->
         
     </div>
 
-    <!--div id="inputContainer" style="display: none;">
-        <input type="text" id="pickupInput" placeholder="Input pick up point">
-        <button  onclick="showConfirmation()">Next</button>
-        <div id="confirmation" style="display: none;"></div> 
-    </div-->
+    
     
 
     <!-- MODAL      
@@ -60,7 +56,19 @@
 </div-->
 
 
-<div id="modal" class="modal">
+
+<div id="emailBox" style="display: none;">
+    <h2>Your chance to be one of the first riders! :</h2>
+    <form id="email-form"></form>
+    <input type="email" id="email" name="email" required placeholder="yourname@gmail.com">
+        <button type="submit" onclick="showConfirmation()">Join Waiting List</button>
+        <!--button  onclick="showConfirmation()">Next</button-->
+        <div id="confirmation" style="display: none;"></div> 
+    </div>
+
+
+
+<!--div id="modal" class="modal">
     <div class="modal-content">
     <span class="close" onclick="closeModal()">x</span>
       <h2>Your chance to be one of the first riders! :</h2>
@@ -69,7 +77,7 @@
         <button type="submit">Join Waiting List</button>
       </form>
     </div>
-  </div>
+  </div-->
 
 
 

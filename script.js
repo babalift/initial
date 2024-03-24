@@ -67,13 +67,15 @@ var sum = 2 + 3;
 */
 
 
-/*
+
 function showInput() {
-    // document.getElementById("central").style.display = "none";
-    document.getElementById("inputContainer").style.display = "block" ; // Show the input container
+  document.getElementById("central").style.display = "none";
+  document.getElementById("emailBox").style.display = "block";
+
+//    document.getElementById("inputContainer").style.display = "block" ; // Show the input container
 }
-*/
-/*
+
+
 
 function showConfirmation() {
     var pickupPoint = document.getElementById("email").value; // Get the value of the input field
@@ -82,9 +84,9 @@ function showConfirmation() {
     
 }
 
-*/
 
 
+/*
 function openModal() {
     document.getElementById("modal").style.display = "flex";
   }
@@ -94,7 +96,7 @@ function openModal() {
   }
 
   
-
+*/
 
 
 
