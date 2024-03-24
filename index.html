@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=swap">
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/babalift/initial/main/icon.png"> <!-- Favicon -->
 </head>
+
+
 <body>
     <div class="top-nav">
         <nav class="nav">
@@ -19,16 +21,65 @@
             </ul>
         </nav>
     </div>
-    <div class="container">
+
+    <!--div id="central" class="container" style="display: block;"-->
+    <div id="central" class="container" style="display: flex;">
         <h1 class="welcome">Welcome to...</h1> <!-- Welcome above the image -->
         <img src="https://raw.githubusercontent.com/babalift/initial/main/icon.png" alt="BaBaLift Logo" class="logo"> <!-- Image/Logo with modified size -->
-        <!--main class="main">  </main-->
-            <button class="button">Get a Lift</button> <!-- Adjusted button text -->
+        <button class="button" onclick="openModal()">Get a Lift</button> <!-- Adjusted button text -->
         
-
     </div>
+
+    <!--div id="inputContainer" style="display: none;">
+        <input type="text" id="pickupInput" placeholder="Input pick up point">
+        <button  onclick="showConfirmation()">Next</button>
+        <div id="confirmation" style="display: none;"></div> 
+    </div-->
+    
+
+    <!-- MODAL      
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">x</span>
+          <input type="text" id="pickupInput" placeholder="your email here">
+          <button onclick="showConfirmation()">Next</button>
+          <div id="confirmation" style="display: none;"></div> 
+        </div>
+      </div>
+    -->
+
+<!-- MODAL --
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">x</span>
+        <p>Your chance to be one of our first free riders:</p>
+        <input type="email" id="pickupInput" placeholder="Your Gmail account here @gmail.com" disabled>
+        <button onclick="showConfirmation()">Next</button>
+        <div id="confirmation" style="display: none;"></div>
+    </div>
+</div-->
+
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+    <span class="close" onclick="closeModal()">x</span>
+      <h2>Your chance to be one of our first riders:</h2>
+        <form id="email-form">
+         <input type="email" id="email" name="email" required placeholder="yourname@gmail.com">
+        <button type="submit">Join Waiting List</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
     <footer class="footer">
         <h2>Eco, Fit, Fun!</h2> <!-- Slogan in the bottom -->
     </footer>
+    <script src="script.js"></script> <!-- Include JavaScript file -->
 </body>
 </html>
